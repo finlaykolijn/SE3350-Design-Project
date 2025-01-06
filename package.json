@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@fullcalendar/core": "^6.1.10",
+    "@fullcalendar/daygrid": "^6.1.10",
+    "@fullcalendar/react": "^6.1.10",
+    "@fullcalendar/timegrid": "^6.1.10",
+    "emailjs-com": "^3.2.0",
+    "fullcalendar": "^6.1.10"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "scripts": {
+    "start": "concurrently \"npm --prefix client start\" \"npm --prefix server run dev\""
+  }  
+}

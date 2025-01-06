@@ -1,0 +1,248 @@
+.fade-in-out {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fade-in-out.hidden {
+  opacity: 0;
+}
+
+.aboutcheer-container {
+  position: relative;
+  background-color: #F4EDDD;
+}
+
+.hero-banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 400px; /* Adjust the height as needed */
+  transition: filter 0.5s;
+}
+
+.hero-banner:hover img {
+  filter: brightness(0.7); /* Darken the image on hover */
+}
+
+.hero-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+}
+
+.cta-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  filter: brightness(1);
+  transition: opacity 0.5s;
+  border: none;
+}
+
+.cta-button a {
+  --color: #6A5870;
+  --color2: #FFFFFF;
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 1px solid var(--color);
+  border-radius: 1000px;
+  display: inline-block;
+  transition: all .2s;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border: none;
+  text-shadow:0 0 10px rgba(255, 255, 255, 1);;
+}
+
+.cta-button a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
+}
+
+.cta-button a:active {
+  transform: translateY(-3px);
+}
+
+.cta-button a::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  transition: all .3s;
+}
+
+.cta-button a:hover::after {
+  background-color: #6A5870;
+  transform: scaleX(1.4) scaleY(1.5);
+  opacity: 0;
+}
+
+.dots-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: flex;
+  filter: brightness(1.3);
+  transition: opacity 0.5s;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 1); /* White shadow */
+}
+
+.dot.active {
+  background-color: #555;
+}
+
+.hero-banner:hover .cta-button,
+.hero-banner:hover .dots-container {
+  opacity: 1; /* Show button and dots on hover */
+}
+
+#flex-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.flex-box {
+  width: 45%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+.microphone-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(0);
+}
+.flex-box:nth-child(1) {
+  background-color: #637249; /* First flexbox background color */
+}
+.flex-box:nth-child(1) * {
+  color: #ffffff; /* Text color for all elements inside the third flexbox */
+}
+.flex-box:nth-child(2) {
+  background-color: #deaea0; /* Second flexbox background color */
+}
+
+.flex-box:nth-child(3) {
+  background-color: #6a5870; /* Last flexbox background color */
+}
+
+.flex-box:nth-child(3) * {
+  color: #ffffff; /* Text color for all elements inside the third flexbox */
+}
+
+.flex-box:hover {
+  transform: translate3d(0, -5px, 0); /* Move box forward */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.flex-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.flex-box a {
+  text-decoration: none;
+  font-style: italic;
+}
+
+.flex-box a:hover {
+  color: #db7859; /* Change color on hover */
+}
+
+.flex-box p {
+  margin-top: 10px;
+  color: #333333;
+}
+
+.flexbox-link {
+  /* Preserve the default text color */
+  text-decoration: none;
+  font-style: italic;
+  transition: color 0.5s ease; /* Smooth transition for color change */
+}
+
+/* Add styles for the additional flexboxes */
+.additional-flexboxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.additional-flexboxes .flex-box {
+  width: 10% !important; /* Adjust width as needed */
+  margin-bottom: 50px !important;
+}
+
+.flexboxes-container .flex-container {
+  display: flex;
+  justify-content: flex-start; /* Change to flex-start to keep items aligned to the start */
+  align-items: center; /* Align items vertically */
+}
+
+.flexboxes-container .flex-container h3 {
+  margin-right: 10px; /* Adjust spacing between the header and the button */
+}
+
+#additional-microphone {
+  margin-left: 10px;
+}
+.partner-image {
+  height: 200px; /* Adjust the height as needed */
+  width: auto;
+}
+.partnerships-grid {
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust spacing between items */
+}
+
+.partner {
+  flex-basis: calc(50% - 10px); /* Adjust width for 2 items per row with spacing */
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+@media screen and (min-width: 768px) {
+  .partner {
+    flex-basis: calc(33.33% - 10px); /* Adjust width for 3 items per row with spacing */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .partner {
+    flex-basis: calc(25% - 10px); /* Adjust width for 4 items per row with spacing */
+  }
+}

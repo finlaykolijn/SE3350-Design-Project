@@ -1,0 +1,77 @@
+.contactUs-container {
+  padding: 20px;
+  border-radius: 5px 0px 5px 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #DB7859;
+}
+
+.form-and-map-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+textarea {
+  resize: none; /* Disable resizing */
+  overflow-y: auto; /* Enable vertical scrollbar */
+  scrollbar-width: thin; /* Set the width of the scrollbar */
+  width: calc(100% - 22px); /* Adjust width to account for scrollbar */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/* Track */
+textarea::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+/* Handle */
+textarea::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar */
+  border-radius: 4px; /* Border radius of the scrollbar */
+}
+
+/* Handle on hover */
+textarea::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar on hover */
+}
+
+.email-form {
+  flex: 1;
+}
+
+.map {
+  flex: 1;
+  margin-left: 20px; /* To create space between the form and the map */
+}
+
+.facebook {
+  margin-top: 20px;
+}
+
+.facebook a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #333; /* Change color as needed */
+}
+
+.facebook img {
+  margin-right: 10px;
+}
+
+/* Add margin to Font Awesome icons */
+.contactUs-container label {
+  margin-right: 10px;
+}
+
+.contactUs-container h2 button {
+  margin-left: 10px; /* Adjust the margin as needed */
+}

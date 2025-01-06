@@ -1,0 +1,32 @@
+/* NewsLetter.css */
+.newsletter-page {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #DEAEA0;
+}
+.newsletter-title {
+  margin-bottom: 20px; /* Add more space between title and form */
+}
+
+.newsletter-container {
+  /* Styling for the container holding newsletter posts */
+  display: grid;
+  gap: 10px;
+}
+
+.newsletter-post {
+  /* Styling for each newsletter post */
+  background-color: #DEAEA0;
+  border: 2px solid #000000;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.form-group {
+  margin-bottom: 15px; /* Add spacing between form groups */
+}
+
+.newsletter-post:hover {
+  background-color: #e9e6e0;
+}
